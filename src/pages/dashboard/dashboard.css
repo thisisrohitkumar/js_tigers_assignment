@@ -1,0 +1,16 @@
+.row_1{
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+.row_2{
+    width: 100%;
+    margin-top: 20px;
+}
+
+.row_2 img{
+    width: 100%;
+}
