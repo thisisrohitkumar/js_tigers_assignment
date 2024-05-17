@@ -4,7 +4,13 @@ import { Pie } from "react-chartjs-2";
 
 ChartJS.register(ArcElement, Tooltip, Legend);
 
-const PieChart = ({ labels, data, backgroundColor, position, chartName }) => {
+const PieChartAnalytics = ({
+  labels,
+  data,
+  backgroundColor,
+  position,
+  chartName,
+}) => {
   const chartData = {
     labels: labels || [],
     datasets: [
@@ -16,7 +22,10 @@ const PieChart = ({ labels, data, backgroundColor, position, chartName }) => {
   };
 
   return (
-    <div className="chart-container">
+    <div
+      className="chart-container"
+      style={{ flex: "1", width: "20%", height: "300px" }}
+    >
       <p style={{ textAlign: "center", fontWeight: "600", marginBottom: "10" }}>
         {chartName || ""}
       </p>
@@ -40,4 +49,4 @@ const PieChart = ({ labels, data, backgroundColor, position, chartName }) => {
   );
 };
 
-export default PieChart;
+export default PieChartAnalytics;

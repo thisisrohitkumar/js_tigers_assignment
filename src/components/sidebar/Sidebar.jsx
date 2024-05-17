@@ -19,12 +19,12 @@ const Sidebar = () => {
         <div className="sidebar__content">
         <ul>
       <li>
-        <NavLink to="/" className='reset__a sidebar__item active'>
+        <NavLink to="/" className='reset__a sidebar__item' activeClassName='active'>
           <span><img src={DashboardIcon} alt="Dashboard" /> Dashboard</span>
         </NavLink>
       </li>
       <li>
-        <NavLink to="/analytics" className='reset__a sidebar__item'>
+        <NavLink to="/analytics" className='reset__a sidebar__item' activeClassName='active'>
           <span><img src={AnalyticsIcon} alt="Analytics" /> Analytics</span>
         </NavLink>
       </li>
